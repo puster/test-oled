@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="s6$bykq$xn5`Km4f1y}U" x="0" y="0"></block><block type="device_forever" id="%(hjp|;wKsc2*cSyIly8" x="205" y="0"></block><block type="device_button_event" id="n-,m;5#yeD`IJM=Y{92I" x="11" y="221"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="zeigeZahl" id="~oTUaOFzbg3e1y[.Bxr4"><value name="num"><shadow type="math_number" id="-G|i~,^X*5RKGq2q7wg$"><field name="NUM">8888</field></shadow></value></block></statement></block><block type="device_button_event" id="H.LeJ!SOhC~r.Y-U+J2i" x="378" y="204"><field name="NAME">Button.AB</field><statement name="HANDLER"><block type="VIEW128x64_clear" id="6dYigf,LEvXiO2uAx2u["></block></statement></block><block type="device_button_event" id="*,oG+4E-Sl+FH{*#a:WF" x="10" y="376"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="kitronik_VIEW128x64_writeImageOLED" id="q$*:M/xP~#w4G+S[6.c$"><value name="im"><block type="kitronik_VIEW128x64_matrix16x16" id="^atj30@1f5Nl-|0eudeC"><field name="LEDS">`
+        . . . # . . . # . . . . . . . . 
+        . . . # . . . # . . . . . . . . 
+        . . . # . . . # # # # # # # . . 
+        . . # . . . # . . . . . . # . . 
+        . # # . . # . . . . . . . # . . 
+        # . # . . . . . . # . . # . . . 
+        . . # . . . . . . # . . . . . . 
+        . . # . . . . . . # . . . . . . 
+        . . # . . . # . . # . . # . . . 
+        . . # . . # # . . # . . . # . . 
+        . . # . . # . . . # . . . # . . 
+        . . # . . . . . . # . . . . . . 
+        . . # . . . . # # # . . . . . . 
+        . . # . . . . . . # . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . .
+        `</field></block></value><value name="xpos"><shadow type="math_number" id="r!VU%XpS`Ck0f_Tz4h{L"><field name="NUM">5</field></shadow></value><value name="ypos"><shadow type="math_number" id="[W:;t5ijr%lSFonk7sh."><field name="NUM">5</field></shadow></value><next><block type="VIEW128x64_draw" id=".CN?#~XOWYX{uhX~EcUg"></block></next></block></statement></block></xml>
