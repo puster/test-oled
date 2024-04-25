@@ -1,30 +1,17 @@
 input.onButtonPressed(Button.A, function () {
-    kitronik_VIEW128x64.zeigeZahl(8888)
+    basic.showNumber(DS3231.temperatureUpper())
 })
-input.onButtonPressed(Button.AB, function () {
-    kitronik_VIEW128x64.clear()
-})
-input.onButtonPressed(Button.B, function () {
-    kitronik_VIEW128x64.writeImageOLED(kitronik_VIEW128x64.matrix16x16(`
-        . . . # . . . # . . . . . . . .
-        . . . # . . . # . . . . . . . .
-        . . . # . . . # # # # # # # . .
-        . . # . . . # . . . . . . # . .
-        . # # . . # . . . . . . . # . .
-        # . # . . . . . . # . . # . . .
-        . . # . . . . . . # . . . . . .
-        . . # . . . . . . # . . . . . .
-        . . # . . . # . . # . . # . . .
-        . . # . . # # . . # . . . # . .
-        . . # . . # . . . # . . . # . .
-        . . # . . . . . . # . . . . . .
-        . . # . . . . # # # . . . . . .
-        . . # . . . . . . # . . . . . .
-        . . . . . . . . . . . . . . . .
-        . . . . . . . . . . . . . . . .
-        `), 5, 5)
+loops.everyInterval(1000, function () {
+    kitronik_VIEW128x64.writeImageOLED(kitronik_VIEW128x64.matrix8x8(`
+        . . . # # . . .
+        . . # # # # . .
+        . # # # # # # .
+        # # # # # # # #
+        . . . . . . . .
+        . . . . . . . .
+        . . . . . . . .
+        . . . . . . . .
+        `), 59, 53)
     kitronik_VIEW128x64.refresh()
-})
-basic.forever(function () {
-	
+    kitronik_VIEW128x64.zeigeZahl(DS3231.hour() * 100 + DS3231.minute())
 })

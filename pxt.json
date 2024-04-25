@@ -5,7 +5,9 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "pxt-oledpaint": "github:mkleinsb/pxt-oledpaint#v1.2.1"
+        "pxt-oledpaint": "github:mkleinsb/pxt-oledpaint#v1.2.1",
+        "pxt-DS3231": "github:keble6/pxt-ds3231#v1.0.2",
+        "pxt-sonar": "github:microsoft/pxt-sonar#v0.0.5"
     },
     "files": [
         "main.blocks",
