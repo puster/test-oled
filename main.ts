@@ -15,3 +15,11 @@ loops.everyInterval(1000, function () {
     kitronik_VIEW128x64.refresh()
     kitronik_VIEW128x64.zeigeZahl(DS3231.hour() * 100 + DS3231.minute())
 })
+basic.forever(function () {
+    pins.digitalWritePin(DigitalPin.P8, 1)
+    basic.pause(500)
+    pins.digitalWritePin(DigitalPin.P8, 0)
+    pins.digitalWritePin(DigitalPin.P12, 1)
+    basic.pause(500)
+    pins.digitalWritePin(DigitalPin.P12, 0)
+})
